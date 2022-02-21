@@ -9,7 +9,7 @@ from cloud_logging.setup import setup_logging
 
 
 class Settings(BaseSettings):
-    environment: str = 'development'
+    environment: str = 'production'
 
 
 settings = Settings()
