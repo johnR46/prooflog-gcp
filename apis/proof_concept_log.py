@@ -15,4 +15,5 @@ def proof_logger():
     logger.warning('WARNING LOG')
     logger.info('INFO LOG')
     logger.info('INFO LOG1')
+    logger.info('INFO LOG2')
     return {'message': 'Hello World'}
