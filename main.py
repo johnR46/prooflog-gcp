@@ -1,4 +1,6 @@
 import logging
+
+import uvicorn
 from fastapi import FastAPI
 from fastapi.logger import logger
 
@@ -15,3 +17,6 @@ if environment == 'production':
     app.add_middleware(LoggingMiddleware)
 else:
     logger.setLevel(logging.DEBUG)
+
+if __name__ == "__main__":
+    uvicorn.run("main:app", host='0.0.0.0', port=8080, reload=True, debug=False)
