@@ -2,7 +2,7 @@ from fastapi import FastAPI
 import logging
 from fastapi.logger import logger
 
-from apis import proof_concept_log
+from app.apis import proof_concept_log
 from cloud_logging.middleware import LoggingMiddleware
 from cloud_logging.setup import setup_logging
 from settings import environment
